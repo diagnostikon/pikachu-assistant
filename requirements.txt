@@ -9,4 +9,7 @@ httpx==0.25.2
 sounddevice==0.4.6
 scipy==1.11.4
 requests==2.31.0
-pywin32
+pywin32>=305
+pyperclip
+SpeechRecognition
+pyttsx3

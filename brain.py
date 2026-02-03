@@ -58,7 +58,10 @@ COMMANDS:
 14. Clipboard History: {"action": "get_clipboard_history"}
     (Triggers: copied texts, clipboard history, show copied texts, /copied_texts, what did i copy, clipboard)
 
-15. Chat:  {"action": "general_chat", "response": "text"}
+15. Find File: {"action": "find_file", "time_query": "yesterday afternoon", "file_type": "pdf", "keyword": "report"}
+    (Triggers: find that file, get me that PDF, that document I opened, file I was working on, send that file, give me that Excel, that image I saw)
+
+16. Chat:  {"action": "general_chat", "response": "text"}
 
 *** CRITICAL RULE: CONTEXT AWARENESS ***
 Use the [CURRENT CONTEXT STATE] below to resolve words like "it", "that", "the app", "the folder".
@@ -138,7 +141,14 @@ def process_command(user_input):
         elif any(x in lower for x in ["/copied_texts", "copied texts", "clipboard history", "clipboard", "what did i copy", "show copied", "give me copied texts"]):
             data = {"action": "get_clipboard_history"}
 
-        # 10. Force File Send (MERGED LOGIC)
+        # 10. Force Find File (Context-Aware File Finder)
+        # Detect file finding queries - "find that", "get me that", "send that", "that file", etc.
+        find_triggers = ["find that", "get that", "send that", "give me that", "that file", "that pdf", "that document", "that excel", "that image", "that video", "i was reading", "i opened", "i was working on", "file i", "document i"]
+        if any(trigger in lower for trigger in find_triggers):
+            # Pass query once - file_finder.py will extract time and type
+            data = {"action": "find_file", "query": user_input}
+
+        # 11. Force File Send (MERGED LOGIC)
         send_keywords = ["give", "send", "upload", "fetch", "get"]
         safe_to_override = True
         

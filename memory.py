@@ -47,3 +47,66 @@ def get_context_string():
     - Last Browser Used: {short_term['last_browser_used']}
     - Last File/Folder: {short_term['last_file_path']}
     """
+
+def track_file_preference(file_type):
+    """
+    Track user's file type preferences based on successful file searches
+    This helps prioritize certain file types in future searches
+    
+    Args:
+        file_type: File extension (e.g., 'pdf', 'docx', 'xlsx')
+    """
+    try:
+        data = load_long_term()
+        
+        # Initialize file preferences if not exists
+        if "file_preferences" not in data:
+            data["file_preferences"] = {
+                "preferred_types": {},
+                "total_searches": 0
+            }
+        
+        # Increment count for this file type
+        prefs = data["file_preferences"]
+        if file_type not in prefs["preferred_types"]:
+            prefs["preferred_types"][file_type] = 0
+        
+        prefs["preferred_types"][file_type] += 1
+        prefs["total_searches"] += 1
+        
+        # Save updated preferences
+        with open(MEMORY_FILE, 'w') as f:
+            json.dump(data, f, indent=4)
+        
+        print(f"📊 Tracked file preference: {file_type} (total: {prefs['preferred_types'][file_type]})")
+        
+    except Exception as e:
+        print(f"Error tracking file preference: {e}")
+
+def get_preferred_file_types(limit=3):
+    """
+    Get user's most frequently accessed file types
+    
+    Args:
+        limit: Maximum number of types to return
+        
+    Returns:
+        List of file types sorted by frequency
+    """
+    try:
+        data = load_long_term()
+        
+        if "file_preferences" not in data:
+            return []
+        
+        prefs = data["file_preferences"]["preferred_types"]
+        
+        # Sort by count (descending)
+        sorted_types = sorted(prefs.items(), key=lambda x: x[1], reverse=True)
+        
+        # Return top N types
+        return [file_type for file_type, count in sorted_types[:limit]]
+        
+    except Exception as e:
+        print(f"Error getting file preferences: {e}")
+        return []

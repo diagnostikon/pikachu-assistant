@@ -3,6 +3,9 @@ from listener import listen_for_command, take_user_input, speak
 from brain import process_command
 from muscles import execute_command
 
+# Import file tracker - it will auto-start when imported
+import file_tracker
+
 def main():
     print("⚡ SYSTEM ONLINE: Say 'Hey Pikachu' to start...")
     
@@ -37,3 +40,6 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         print("\n⚡ System shutting down.")
+        # Stop file tracking on shutdown
+        file_tracker.stop_tracking()
+        

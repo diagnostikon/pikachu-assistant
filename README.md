@@ -1,4 +1,4 @@
-# Zyron Desktop Assistant
+# Pikachu Desktop Assistant
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 [![AI Engine](https://img.shields.io/badge/AI-Ollama-000000.svg?style=for-the-badge&logo=ai&logoColor=white)](https://ollama.com)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-00C853.svg?style=for-the-badge&logo=shield&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-FFC107.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.2-4CAF50.svg?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-1.3-4CAF50.svg?style=for-the-badge)](CHANGELOG.md)
 
 **Intelligent Desktop Automation with Privacy-First Architecture**
 
@@ -21,7 +21,7 @@
 
 ## Overview
 
-Zyron Desktop Assistant is a sophisticated automation platform that transforms Windows workstations into intelligent, voice-controlled environments. Built on a privacy-first architecture, the system operates entirely offline using Ollama's local inference engine—eliminating external API dependencies and ensuring complete data sovereignty.
+Pikachu Desktop Assistant is a sophisticated automation platform that transforms Windows workstations into intelligent, voice-controlled environments. Built on a privacy-first architecture, the system operates entirely offline using Ollama's local inference engine—eliminating external API dependencies and ensuring complete data sovereignty.
 
 ### Core Value Proposition
 
@@ -96,11 +96,11 @@ Location                   → IP-based geolocation query
 
 **Voice Activation**
 ```plaintext
-Hey Zyron, open Spotify
-Hey Zyron, what's my battery level?
-Hey Zyron, take a screenshot
-Hey Zyron, what am I doing?
-Hey Zyron, where am I?
+Hey Pikachu, open Spotify
+Hey Pikachu, what's my battery level?
+Hey Pikachu, take a screenshot
+Hey Pikachu, what am I doing?
+Hey Pikachu, where am I?
 ```
 
 ---
@@ -128,8 +128,8 @@ The automated installer handles complete system configuration:
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
-cd zyron-assistant
+git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
+cd pikachu-assistant
 
 # Execute automated setup
 setup.bat
@@ -166,8 +166,8 @@ ollama run qwen2.5-coder:7b
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
-cd zyron-assistant
+git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
+cd pikachu-assistant
 
 # Create isolated Python environment
 python -m venv venv
@@ -342,11 +342,11 @@ start_pikachu.bat
 Activate using wake word, then issue command:
 
 ```plaintext
-Hey Zyron, open Chrome
-Hey Zyron, what's my battery level?
-Hey Zyron, take a screenshot
-Hey Zyron, show me current activities
-Hey Zyron, record audio
+Hey Pikachu, open Chrome
+Hey Pikachu, what's my battery level?
+Hey Pikachu, take a screenshot
+Hey Pikachu, show me current activities
+Hey Pikachu, record audio
 ```
 
 ---
@@ -453,28 +453,45 @@ LOG_LEVEL=ERROR    # Critical errors only
 ## Project Structure
 
 ```plaintext
-zyron-assistant/
+pikachu-assistant/
+├── .git/                      # Git version control
 ├── .gitignore                 # Version control exclusions
-├── README.md                  # Project documentation
-├── brain.py                   # AI inference engine (Ollama integration)
-├── listener.py                # Voice wake word detection system
-├── main.py                    # Application entry point
-├── memory.py                  # Conversation context management
-├── muscles.py                 # System automation controller
-├── requirements.txt           # Python dependency specifications
-├── run_silent.vbs            # Background process launcher
-├── setup.bat                  # Automated installation script
-├── start_zyron.bat           # Quick launch utility
-├── tele_agent.py             # Telegram bot handler
-├── test_mic.py               # Microphone diagnostic tool
-├── activity_monitor.py       # Application and browser tracking
 ├── browser_extension/         # Browser activity monitoring extension
 │   ├── manifest.json         # Extension configuration
 │   ├── background.js         # Background service worker
 │   ├── popup.html           # Extension UI
 │   └── popup.js             # Extension logic
-├── .env                      # Environment configuration (user-created)
-└── venv/                     # Python virtual environment
+├── docs/                      # Documentation files
+│   ├── ACTIVITIES_FEATURE_GUIDE.md
+│   ├── ARCHITECTURE.md
+│   ├── CONFIGURATION.md
+│   ├── CONTRIBUTING.md
+│   ├── EXTENSION_INSTALL_GUIDE.md
+│   ├── INSTALLATION.md
+│   ├── LOCATION_ACCURACY_GUIDE.md
+│   └── USER_MANUAL.md
+├── venv/                      # Python virtual environment
+├── __pycache__/              # Python cache files
+├── .env                       # Environment configuration (user-created)
+├── README.md                  # Project documentation (this file)
+├── activity_monitor.py        # Application and browser tracking
+├── brain.py                   # AI inference engine (Ollama integration)
+├── clipboard_history.json     # Clipboard history database (NEW v1.3)
+├── clipboard_monitor.py       # Clipboard history tracking (NEW v1.3)
+├── file_activity_log.json     # File access history database (NEW v1.3)
+├── file_finder.py             # Intelligent file search (NEW v1.3)
+├── file_tracker.py            # File activity monitoring (NEW v1.3)
+├── listener.py                # Voice wake word detection system
+├── long_term_memory.json      # User preferences and learning data
+├── main.py                    # Application entry point
+├── memory.py                  # Conversation context management
+├── muscles.py                 # System automation controller
+├── requirements.txt           # Python dependency specifications
+├── run_silent.vbs             # Background process launcher (VBScript)
+├── setup.bat                  # Automated installation script (Windows Batch)
+├── start_pikachu.bat          # Quick launch utility (Windows Batch)
+├── tele_agent.py              # Telegram bot handler
+└── test_mic.py                # Microphone diagnostic tool
 ```
 
 ### Component Descriptions
@@ -487,14 +504,61 @@ zyron-assistant/
 | `muscles.py` | System control operations (applications, files, media) |
 | `memory.py` | Conversation history and context persistence |
 | `activity_monitor.py` | Application and browser session tracking |
+| `file_tracker.py` | **NEW:** Automatic file activity monitoring and logging |
+| `file_finder.py` | **NEW:** Natural language file search engine |
+| `clipboard_monitor.py` | **NEW:** Clipboard history tracker and manager |
 | `browser_extension/` | Browser tab monitoring extension source |
+| `docs/` | Comprehensive documentation and user guides |
 | `setup.bat` | Automated installer with dependency management |
 | `run_silent.vbs` | Background launcher for stealth operation |
+| `start_pikachu.bat` | Quick launcher for the assistant |
 | `test_mic.py` | Microphone functionality verification |
 
 ---
 
 ## Release Notes
+
+### Version 1.3 - Next Release (Coming Soon)
+
+**Intelligent File Tracking & Discovery**
+- Automatic file activity monitoring across your entire system
+- 30-day historical file access log with detailed metadata
+- Context-aware file finder using natural language queries
+- Smart file type preference learning based on usage patterns
+
+**File Activity Monitor**
+- Real-time tracking of all file opens/access across applications
+- Logs file path, timestamp, application used, and duration
+- Supports 40+ file types including documents, images, videos, code files, and archives
+- Background tracking with minimal system impact
+- Automatic cleanup of logs older than 30 days
+
+**Natural Language File Finder**
+- Find files using conversational queries like:
+  - "Find that PDF I opened yesterday afternoon"
+  - "Get me that Excel file from this morning"
+  - "Send that document I was working on last week"
+  - "That image I saw 2 hours ago"
+- Time-aware search (yesterday, this morning, 2 hours ago, last week)
+- File type detection (PDF, Excel, Word, images, videos, etc.)
+- Keyword-based filtering for precise results
+- Machine learning preference tracking for better suggestions
+
+**Clipboard History Tracking**
+- Monitors and stores last 100 copied texts automatically
+- Timestamps for each clipboard entry
+- Quick access to previously copied content
+- Command: `/copied_texts` or voice: "Hey Pikachu, show clipboard history"
+
+**Command Examples**
+```plaintext
+Find that file I opened yesterday     → Search last 24 hours
+Get me that PDF from this morning     → Filter by file type + time
+Send that Excel I worked on           → Context-aware file retrieval
+Show clipboard history                → View recent copied texts
+```
+
+---
 
 ### Version 1.2 - Current Release
 
@@ -502,7 +566,7 @@ zyron-assistant/
 - Real-time tracking of active browser tabs with full URL visibility
 - Desktop application detection and monitoring
 - System resource utilization tracking
-- Command: `/activities` or voice: "Hey Zyron, show activities"
+- Command: `/activities` or voice: "Hey Pikachu, show activities"
 
 **Audio Recording Capability**
 - Dual-source audio capture (system + microphone)
@@ -512,7 +576,7 @@ zyron-assistant/
 **Geolocation Services**
 - IP-based location tracking implementation
 - City, region, and country identification
-- Command: `/location` or voice: "Hey Zyron, where am I?"
+- Command: `/location` or voice: "Hey Pikachu, where am I?"
 - Note: Accuracy subject to IP geolocation database precision
 
 **Auto-Start Integration**
@@ -524,12 +588,12 @@ zyron-assistant/
 - Comprehensive drive scanning for all partitions (C:, D:, etc.)
 - Visual usage status indicators (🟢/🟡/🔴)
 - Detailed breakdown of used vs. free space (GB) and percentage
-- Command: /storage or voice: "Hey Zyron, check storage"
+- Command: /storage or voice: "Hey Pikachu, check storage"
 
 **Recycle Bin Management**
 - Instant permanent deletion of all Recycle Bin contents across all drives
 - Rapid execution time (typically clears in seconds)
-- Command: /clear_bin or voice: "Hey Zyron, clear the bin"
+- Command: /clear_bin or voice: "Hey Pikachu, clear the bin"
 
 ---
 
@@ -547,8 +611,8 @@ Contributions are welcome. Follow these guidelines:
 
 ```bash
 # Clone forked repository
-git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
-cd zyron-assistant
+git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
+cd pikachu-assistant
 
 # Create development branch
 git checkout -b dev
@@ -596,7 +660,7 @@ This project is licensed under the MIT License. See the LICENSE file for complet
 
 ```plaintext
 MIT License - Free to use, modify, and distribute
-Copyright © 2025 Zyron Desktop Assistant
+Copyright © 2025 Pikachu Desktop Assistant
 ```
 
 ---

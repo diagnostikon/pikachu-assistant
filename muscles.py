@@ -12,6 +12,7 @@ import requests
 import json
 import activity_monitor
 import clipboard_monitor  # <--- NEW IMPORT ADDED
+from file_finder import find_files_from_query, format_search_results, get_file_path  # <--- FILE FINDER IMPORT
 
 PROCESS_NAMES = {
     # Browsers
@@ -495,6 +496,124 @@ def set_brightness(level):
     except Exception as e:
         print(f"Error setting brightness: {e}")
 
+def execute_find_file(action_data):
+    """
+    Execute file finding using the file_finder module
+    Returns file path if found (for Telegram sending), or error message
+    """
+    print("🔍 Searching for file...")
+    
+    try:
+        # Get the search query (brain.py now sends "query" instead of time_query/file_type)
+        query = action_data.get("query")
+        
+        if not query:
+            # Fallback for old format (backward compatibility)
+            time_query = action_data.get("time_query")
+            file_type = action_data.get("file_type")
+            keyword = action_data.get("keyword")
+            
+            if time_query:
+                query = time_query
+            else:
+                parts = []
+                if file_type:
+                    parts.append(file_type)
+                if keyword:
+                    parts.append(keyword)
+                query = " ".join(parts) if parts else "recent files"
+        
+        # Search for files using the natural language query
+        print(f"   Query: '{query}'")
+        results = find_files_from_query(query, limit=3)
+        
+        if not results:
+            # No files found - return helpful message
+            print("   ❌ No matching files found")
+            return {
+                "status": "not_found",
+                "message": "⚠️ No matching files found.\n\nTry:\n• 'files opened today'\n• 'PDFs from yesterday'\n• 'recent documents'"
+            }
+        
+        # Files found!
+        top_result = results[0]
+        file_path = top_result['file_path']
+        file_name = top_result['file_name']
+        confidence = top_result.get('confidence_score', 0)
+        
+        # --- NEW: Extract Metadata ---
+        app_used = top_result.get('app_used', 'Unknown App')
+        timestamp = top_result.get('timestamp', 'Unknown Time')
+        duration = top_result.get('duration_seconds', 0)
+        # -----------------------------
+        
+        print(f"   ✅ Found: {file_name} (confidence: {confidence}%)")
+        
+        # Check if file still exists
+        if not os.path.exists(file_path):
+            print(f"   ⚠️ File was moved/deleted: {file_path}")
+            
+            # If we have multiple results, try the next one
+            if len(results) > 1:
+                for result in results[1:]:
+                    if os.path.exists(result['file_path']):
+                        file_path = result['file_path']
+                        file_name = result['file_name']
+                        
+                        # Update metadata for the alternate file
+                        app_used = result.get('app_used', 'Unknown App')
+                        timestamp = result.get('timestamp', 'Unknown Time')
+                        duration = result.get('duration_seconds', 0)
+                        confidence = result.get('confidence_score', 0)
+                        
+                        print(f"   ✅ Using alternate: {file_name}")
+                        break
+                else:
+                    # None of the results exist
+                    return {
+                        "status": "file_deleted",
+                        "message": f"❌ File was found but no longer exists:\n{file_name}\n\nIt may have been moved or deleted."
+                    }
+            else:
+                return {
+                    "status": "file_deleted",
+                    "message": f"❌ File was found but no longer exists:\n{file_name}\n\nIt may have been moved or deleted."
+                }
+        
+        # Check file size (Telegram limit is 50MB, warn if >20MB)
+        try:
+            file_size_mb = os.path.getsize(file_path) / (1024 * 1024)
+        except:
+            file_size_mb = 0
+            
+        if file_size_mb > 50:
+            return {
+                "status": "too_large",
+                "message": f"❌ File is too large to send via Telegram:\n{file_name}\n\nSize: {file_size_mb:.1f} MB (Telegram limit: 50 MB)\n\nPath: {file_path}"
+            }
+        
+        # Success - return file info for Telegram to send
+        return {
+            "status": "found",
+            "file_path": file_path,
+            "file_name": file_name,
+            "file_size_mb": file_size_mb,
+            "confidence": confidence,
+            "app_used": app_used,       # <--- Passing this to Telegram
+            "timestamp": timestamp,     # <--- Passing this to Telegram
+            "duration": duration,       # <--- Passing this to Telegram
+            "results": results          # All results for reference
+        }
+        
+    except Exception as e:
+        error_msg = f"Error during file search: {e}"
+        print(f"   ❌ {error_msg}")
+        return {
+            "status": "error",
+            "message": f"❌ Search error: {e}"
+        }
+    
+
 def execute_command(cmd_json):
     if not cmd_json: return
     action = cmd_json.get("action")
@@ -534,3 +653,6 @@ def execute_command(cmd_json):
 
     elif action == "get_clipboard_history":
         return clipboard_monitor.get_clipboard_history()
+
+    elif action == "find_file":
+        return execute_find_file(cmd_json)

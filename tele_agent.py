@@ -8,7 +8,8 @@ from brain import process_command
 from muscles import execute_command, capture_webcam
 import memory
 import activity_monitor  # Needed to format the output text
-import clipboard_monitor  # <--- NEW IMPORT: For clipboard history
+import clipboard_monitor  # For clipboard history
+import file_tracker  # <--- NEW IMPORT: THIS STARTS THE FILE TRACKER AUTOMATICALLY
 
 load_dotenv()
 TOKEN = os.getenv("TELEGRAM_TOKEN")
@@ -21,9 +22,10 @@ ALLOWED_USERS = []
 
 CAMERA_ACTIVE = False
 
+# FIXED: Changed level to WARNING to stop the console spam
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO
+    level=logging.WARNING
 )
 
 def get_main_keyboard():
@@ -418,6 +420,111 @@ Longitude: {location_data['longitude']}
                      await update.message.reply_text("❌ Error: File upload timed out or failed.", reply_markup=get_main_keyboard())
              else:
                  await update.message.reply_text("❌ File not found.", reply_markup=get_main_keyboard())
+
+        # --- FIND FILE HANDLER (Context-Aware File Finder) ---
+        elif action == "find_file":
+            if status_msg: await status_msg.delete()
+            
+            # Show searching message
+            search_msg = await update.message.reply_text("🔍 Searching for file...", reply_markup=get_main_keyboard())
+            
+            # Execute file search in background thread
+            loop = asyncio.get_running_loop()
+            try:
+                search_result = await loop.run_in_executor(None, execute_command, command_json)
+                
+                if not search_result:
+                    await search_msg.edit_text("❌ File search failed.", reply_markup=get_main_keyboard())
+                    return
+                
+                status = search_result.get("status")
+                
+                if status == "found":
+                    # File found!
+                    file_path = search_result.get("file_path")
+                    file_name = search_result.get("file_name")
+                    file_size_mb = search_result.get("file_size_mb", 0)
+                    confidence = search_result.get("confidence", 0)
+                    
+                    # --- NEW METADATA DISPLAY ---
+                    app_used = search_result.get("app_used", "Unknown App")
+                    timestamp = search_result.get("timestamp", "Unknown Time")
+                    duration = search_result.get("duration", 0)
+                    
+                    # Format duration string
+                    if duration < 60:
+                        duration_str = f"{duration}s"
+                    else:
+                        m, s = divmod(duration, 60)
+                        duration_str = f"{m}m {s}s"
+                    
+                    # Create Detailed Caption
+                    caption_text = (
+                        f"✅ **Found:** {file_name}\n"
+                        f"📱 **App:** {app_used}\n"
+                        f"📅 **Time:** {timestamp}\n"
+                        f"⏱️ **Duration:** {duration_str}\n"
+                        f"🎯 **Confidence:** {confidence}%"
+                    )
+                    # -----------------------------
+                    
+                    await search_msg.delete()
+                    
+                    # Send file size warning if large
+                    size_warning = ""
+                    if file_size_mb > 20:
+                        size_warning = f"\n\n⚠️ _Large file: {file_size_mb:.1f} MB_"
+                    
+                    # Send loading message
+                    upload_msg = await update.message.reply_text(
+                        f"📤 Uploading: **{file_name}**{size_warning}",
+                        parse_mode='Markdown',
+                        reply_markup=get_main_keyboard()
+                    )
+                    
+                    # Upload the file with new caption
+                    try:
+                        await update.message.reply_document(
+                            document=open(file_path, 'rb'),
+                            caption=caption_text,
+                            parse_mode='Markdown',
+                            reply_markup=get_main_keyboard()
+                        )
+                        await upload_msg.delete()
+                        
+                        # Update memory with successful file type preference
+                        import memory
+                        file_ext = os.path.splitext(file_name)[1].replace('.', '').lower()
+                        memory.track_file_preference(file_ext)
+                        
+                    except Exception as e:
+                        print(f"Upload Error: {e}")
+                        await upload_msg.edit_text(f"❌ Upload failed: {e}", reply_markup=get_main_keyboard())
+                
+                elif status == "not_found":
+                    # No files found
+                    message = search_result.get("message", "No files found.")
+                    await search_msg.edit_text(message, reply_markup=get_main_keyboard())
+                
+                elif status == "file_deleted":
+                    # File was found but doesn't exist anymore
+                    message = search_result.get("message", "File no longer exists.")
+                    await search_msg.edit_text(message, reply_markup=get_main_keyboard())
+                
+                elif status == "too_large":
+                    # File too large for Telegram
+                    message = search_result.get("message", "File too large.")
+                    await search_msg.edit_text(message, reply_markup=get_main_keyboard())
+                
+                else:
+                    # Unknown status or error
+                    message = search_result.get("message", "Search completed with unknown status.")
+                    await search_msg.edit_text(message, reply_markup=get_main_keyboard())
+                    
+            except Exception as e:
+                print(f"Find file error: {e}")
+                await search_msg.edit_text(f"❌ Search error: {e}", reply_markup=get_main_keyboard())
+        # ---------------------------------------------------------
 
         else:
             # Generic action execution
