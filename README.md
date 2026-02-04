@@ -1,696 +1,393 @@
-# Pikachu Desktop Assistant
+<div align="center">
+
+<img src="header.png" alt="ZYRON Assistant Header" width="100%">
+
+<h1>🤖 ZYRON Desktop Assistant</h1>
+
+<p><strong>Your Intelligent Desktop Companion - 100% Local, 100% Private</strong></p>
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![AI Engine](https://img.shields.io/badge/AI-Ollama-000000.svg?style=flat-square&logo=ai&logoColor=white)](https://ollama.com)
+[![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-00C853.svg?style=flat-square&logo=shield&logoColor=white)](#)
+[![License](https://img.shields.io/badge/License-MIT-FFC107.svg?style=flat-square)](LICENSE)
+
+</div>
+
+<div align="center">
+  <h3>⚡ Powerful • 🔒 Private • 🎯 Precise</h3>
+  <p>Control your Windows PC with voice commands or Telegram - all powered by local AI with zero cloud dependencies</p>
+</div>
+
+---
+
+## ✨ What Makes ZYRON Special?
+
+ZYRON isn't just another assistant - it's your personal AI that lives entirely on your machine. No subscriptions, no cloud uploads, no privacy concerns. Just pure, powerful automation at your fingertips.
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
-[![AI Engine](https://img.shields.io/badge/AI-Ollama-000000.svg?style=for-the-badge&logo=ai&logoColor=white)](https://ollama.com)
-[![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-00C853.svg?style=for-the-badge&logo=shield&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-MIT-FFC107.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.3-4CAF50.svg?style=for-the-badge)](CHANGELOG.md)
+### 🎯 Core Features
 
-**Intelligent Desktop Automation with Privacy-First Architecture**
+</div>
 
-*Local AI Processing • Zero Cloud Dependencies • Enterprise-Grade Security*
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <h4>🎤 Voice Control</h4>
+      <p>Just say "Hey Pikachu" and command your PC naturally</p>
+    </td>
+    <td width="33%" align="center">
+      <h4>📱 Remote Access</h4>
+      <p>Control your computer from anywhere via Telegram</p>
+    </td>
+    <td width="33%" align="center">
+      <h4>🧠 Smart AI</h4>
+      <p>Powered by Qwen 2.5 Coder - understands context and intent</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" align="center">
+      <h4>🔒 100% Private</h4>
+      <p>Everything runs locally - no data leaves your PC</p>
+    </td>
+    <td width="33%" align="center">
+      <h4>💰 Zero Cost</h4>
+      <p>No API fees, no subscriptions, completely free</p>
+    </td>
+    <td width="33%" align="center">
+      <h4>🚀 Production Ready</h4>
+      <p>Auto-start, stealth mode, enterprise-grade</p>
+    </td>
+  </tr>
+</table>
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Configuration](#configuration) • [Documentation](#faq)
+---
+
+## 📸 See It In Action
+
+<div align="center">
+
+### Real Conversations with ZYRON
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="collage1.png" alt="File Search & Battery Monitoring" width="100%">
+      <p align="center"><i>Smart file search and battery monitoring with code copying</i></p>
+    </td>
+    <td width="50%">
+      <img src="collage2.png" alt="System Activities & Storage" width="100%">
+      <p align="center"><i>Live browser tracking, app monitoring, and storage analysis</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="collage3.png" alt="Location & Camera Feed" width="100%">
+      <p align="center"><i>Geolocation tracking and live camera feed access</i></p>
+    </td>
+    <td width="50%">
+      <img src="collage4.png" alt="Audio Recording & File System" width="100%">
+      <p align="center"><i>Audio recording and intelligent file system navigation</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="collage5.png" alt="Screenshot & System Health" width="50%">
+      <p align="center"><i>Screenshots and comprehensive system health monitoring</i></p>
+    </td>
+  </tr>
+</table>
 
 </div>
 
 ---
 
-## Overview
+## 🎯 What Can ZYRON Do?
 
-Pikachu Desktop Assistant is a sophisticated automation platform that transforms Windows workstations into intelligent, voice-controlled environments. Built on a privacy-first architecture, the system operates entirely offline using Ollama's local inference engine—eliminating external API dependencies and ensuring complete data sovereignty.
+### 💻 System Control
+- **Launch & Manage Apps** - Open Chrome, Spotify, VS Code, or any application
+- **Power Management** - Sleep, shutdown, restart, or lock your PC
+- **File Operations** - Browse, search, and manage files naturally
+- **Window Control** - Switch between apps, minimize, maximize
 
-### Core Value Proposition
+### 📊 Monitoring & Intelligence
+- **Live Activity Tracking** - See what apps you're running and which browser tabs are open
+- **System Health** - Real-time CPU, RAM, disk, and battery monitoring
+- **Storage Analysis** - Check available space across all drives
+- **Clipboard History** - Access your last 100 copied texts
 
-**Privacy & Security**
-- All processing occurs on-device using local AI inference
-- Zero telemetry or cloud service integration
-- Bank-grade security with no external data transmission
+### 📸 Media Capture
+- **Screenshots** - Capture your screen on command
+- **Camera Feed** - Access your webcam remotely
+- **Audio Recording** - Record 10-second clips from system + microphone
+- **Instant Sharing** - All media delivered via Telegram
 
-**Dual Control Interface**
-- Voice activation with customizable wake word detection
-- Remote management via encrypted Telegram integration
+### 🔍 Smart Search
+- **Intelligent File Finder** - "Find that PDF I opened yesterday" - ZYRON understands
+- **Recent Files** - Access files by time, type, or keyword
+- **Activity Log** - 30-day history of all file access
+- **Context-Aware** - Learns your preferences over time
 
-**Cost Efficiency**
-- No subscription fees or API usage costs
-- Open-source foundation with extensible architecture
-
-**Production Ready**
-- Python-based implementation for easy customization
-- Comprehensive logging and error handling
-- Auto-start capabilities with stealth operation mode
-
----
-
-## Features
-
-### System Capabilities
-
-**Voice Recognition & Control**
-- Wake word detection with configurable activation phrase
-- Natural language processing via Qwen 2.5 Coder (7B parameter model)
-- Hands-free operation for accessibility and convenience
-
-**Remote Management**
-- Telegram bot integration for remote system access
-- Secure command execution from any location
-- Real-time status updates and notifications
-
-**System Automation**
-- Application lifecycle management (launch, terminate, monitor)
-- System power management (sleep, shutdown, restart, lock)
-- Screenshot and webcam capture capabilities
-- File system navigation and management
-
-**Health & Monitoring**
-- Real-time resource utilization tracking (CPU, RAM, Disk)
-- Battery status monitoring with charge level reporting
-- Activity tracking for running applications and browser sessions
-- IP-based geolocation services
-
-**Media Capabilities**
-- 10-second audio recording with dual-source capture (system + microphone)
-- Visual monitoring through screenshot and webcam integration
-- Automated media processing and delivery via Telegram
-
-### Command Examples
-
-**System Management**
-```plaintext
-Open Chrome                 → Launch specified application
-Take a screenshot          → Capture current screen state
-System status              → Comprehensive health report
-Sleep                      → Initiate system sleep mode
-List my documents          → Directory listing with file details
-```
-
-**Monitoring & Intelligence**
-```plaintext
-Record audio               → 10-second dual-source audio capture
-Show activities            → Active applications and browser tabs
-Location                   → IP-based geolocation query
-```
-
-**Voice Activation**
-```plaintext
-Hey Pikachu, open Spotify
-Hey Pikachu, what's my battery level?
-Hey Pikachu, take a screenshot
-Hey Pikachu, what am I doing?
-Hey Pikachu, where am I?
-```
+### 🌍 Location & Network
+- **IP Geolocation** - Know where your laptop is
+- **Network Info** - Check your connection status
+- **Location Tracking** - Useful for lost/stolen device scenarios
 
 ---
 
-## System Requirements
+## 🚀 Quick Start
 
-| Component | Specification | Source |
-|-----------|---------------|--------|
-| **Operating System** | Windows 10/11 (64-bit) | Required |
-| **Python Runtime** | Version 3.10 (strict requirement) | [python.org](https://www.python.org/downloads/) |
-| **AI Infrastructure** | Ollama (latest stable release) | [ollama.com](https://ollama.com/) |
-| **Messaging Platform** | Telegram bot token | [@BotFather](https://t.me/BotFather) |
-| **Storage** | 6 GB available (AI model) | Minimum |
-| **Memory** | 8 GB RAM (16 GB recommended) | Minimum |
+### Prerequisites
 
-**Installation Note:** During Python installation, enable the "Add Python to PATH" option to ensure proper system integration.
+| Requirement | Version | Download |
+|-------------|---------|----------|
+| **Windows** | 10/11 (64-bit) | Pre-installed |
+| **Python** | 3.10+ | [python.org](https://www.python.org/downloads/) |
+| **Ollama** | Latest | [ollama.com](https://ollama.com/) |
+| **Telegram Bot** | Token | [@BotFather](https://t.me/BotFather) |
 
----
-
-## Installation
-
-### Automated Deployment (Recommended)
-
-The automated installer handles complete system configuration:
+### 🎬 Installation (5 Minutes)
 
 ```bash
-# Clone repository
-git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
-cd pikachu-assistant
+# 1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
+cd zyron-assistant
 
-# Execute automated setup
+# 2. Run the magic installer
 setup.bat
+
+# That's it! The installer handles:
+# ✓ Python environment setup
+# ✓ All dependencies
+# ✓ AI model download (qwen2.5-coder:7b)
+# ✓ Windows startup integration
+# ✓ Stealth mode configuration
 ```
 
-**Automated Setup Process:**
-- Python installation verification
-- Virtual environment creation and activation
-- Dependency installation from requirements.txt
-- AI model download and configuration (qwen2.5-coder:7b)
-- Windows startup integration
-- Stealth mode configuration
+### ⚙️ Configuration
 
-### Manual Installation
-
-For users requiring granular control over the installation process:
-
-<details>
-<summary><strong>Expand Manual Installation Guide</strong></summary>
-
-#### Step 1: Ollama & AI Model Configuration
-
-```bash
-# Install Ollama from https://ollama.com/
-# After installation, download the AI model:
-ollama pull qwen2.5-coder:7b
-
-# Verify installation:
-ollama run qwen2.5-coder:7b
-# Exit test session with: /bye
-```
-
-#### Step 2: Environment Setup
-
-```bash
-# Clone repository
-git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
-cd pikachu-assistant
-
-# Create isolated Python environment
-python -m venv venv
-
-# Activate virtual environment (Windows)
-venv\Scripts\activate
-
-# Install project dependencies
-pip install -r requirements.txt
-```
-
-#### Step 3: Environment Configuration
-
-Create `.env` file in project root:
+Create a `.env` file:
 
 ```env
-# Telegram Bot Configuration
 TELEGRAM_TOKEN=your_bot_token_here
-
-# AI Model Selection
 MODEL_NAME=qwen2.5-coder:7b
-
-# Optional: Advanced Configuration
 LOG_LEVEL=INFO
-MAX_TOKENS=2048
 ```
 
-#### Step 4: Telegram Bot Provisioning
-
-1. Open Telegram and initiate conversation with @BotFather
-2. Send command: `/newbot`
-3. Follow the interactive setup process
-4. Copy the provided token to `.env` file
-
-#### Step 5: Launch Assistant
+### 🎯 Launch
 
 ```bash
-# Standard mode (visible console)
+# Visible mode (for testing)
 python main.py
 
-# Stealth mode (hidden background process)
+# Stealth mode (runs in background)
 run_silent.vbs
 ```
 
-</details>
+---
 
-### Browser Activity Monitoring Setup
+## 🎤 Command Examples
 
-To enable comprehensive browser activity tracking with full URL visibility:
+### Voice Commands
+```
+"Hey Pikachu, what's my battery level?"
+"Hey Pikachu, open Spotify"
+"Hey Pikachu, take a screenshot"
+"Hey Pikachu, show me what I'm doing"
+"Hey Pikachu, find that Excel file from yesterday"
+"Hey Pikachu, where am I?"
+"Hey Pikachu, check storage"
+```
 
-1. Navigate to your browser's extension management interface:
+### Telegram Commands
+```
+/activities - See running apps and browser tabs
+/screenshot - Capture your screen
+/battery - Check battery status
+/storage - View disk space across all drives
+/location - Get current location
+/recordaudio - Record 10 seconds of audio
+/camera_on - Start camera feed
+/sleep - Put PC to sleep
+/copied_texts - View clipboard history
+```
+
+### Natural Language (Both Voice & Text)
+```
+"Open Chrome and go to YouTube"
+"What's my battery percentage?"
+"Find that PDF I was working on this morning"
+"Show me my system resources"
+"List files in my downloads folder"
+"Clear the recycle bin"
+"Send me that document I opened yesterday"
+```
+
+---
+
+## 🏗️ Project Architecture
+
+```
+zyron-assistant/
+│
+├── 🧠 brain.py              # AI inference engine (Ollama)
+├── 👂 listener.py           # Voice wake word detection
+├── 📱 tele_agent.py         # Telegram bot handler
+├── 💪 muscles.py            # System automation controller
+├── 🧠 memory.py             # Conversation context
+├── 📊 activity_monitor.py   # Browser & app tracking
+├── 🔍 file_finder.py        # Intelligent file search
+├── 📂 file_tracker.py       # File activity logging
+├── 📋 clipboard_monitor.py  # Clipboard history
+├── 🌐 browser_extension/    # Chrome extension for tab monitoring
+├── ⚙️ setup.bat             # Automated installer
+├── 🥷 run_silent.vbs        # Stealth launcher
+└── 📚 docs/                 # Documentation
+```
+
+---
+
+## 🆕 Latest Features (v1.3)
+
+### 🎯 Intelligent File Tracking
+- **Automatic Monitoring** - Tracks every file you open across all applications
+- **30-Day History** - Complete log with timestamps, apps, and duration
+- **40+ File Types** - Documents, images, videos, code, archives, and more
+
+### 🔍 Natural Language File Search
+Just describe what you're looking for:
+- "Find that PDF I opened yesterday afternoon"
+- "Get me that Excel file from this morning"
+- "Send that document I was working on last week"
+- "That image I saw 2 hours ago"
+
+### 📋 Clipboard History
+- **Last 100 Texts** - Never lose a copied snippet again
+- **Timestamped** - Know when you copied it
+- **Quick Access** - Retrieve via voice or Telegram
+
+---
+
+## 🔒 Privacy & Security
+
+**Why ZYRON is Different:**
+
+✅ **Zero Cloud Dependencies** - Everything runs on your machine  
+✅ **No External APIs** - Your data never leaves your PC  
+✅ **No Telemetry** - We don't collect anything  
+✅ **Open Source** - Audit the code yourself  
+✅ **Local AI** - Ollama processes everything offline  
+
+**Your data is YOURS.**
+
+---
+
+## 🛠️ Advanced Setup
+
+### Browser Activity Monitoring
+
+For complete browser tab tracking with URLs:
+
+1. Navigate to your browser's extension page:
    - Chrome: `chrome://extensions`
    - Brave: `brave://extensions`
    - Edge: `edge://extensions`
 
-2. Enable Developer Mode (toggle switch in top-right corner)
+2. Enable "Developer mode" (toggle in top-right)
 
-3. Click "Load unpacked" and select the `browser_extension` directory from your installation
+3. Click "Load unpacked" and select: `browser_extension/manifest.json`
 
-4. Verify the extension is active (green indicator)
+4. Pin the extension to your toolbar
 
-The assistant can now track active browser tabs and their URLs in real-time.
+Now ZYRON can see your active tabs and URLs in real-time!
 
 ---
 
-## Configuration
+## ❓ FAQ
 
-### Telegram Bot Integration
+**Q: Is my data safe?**  
+A: Absolutely. Everything runs locally on your PC. No cloud services, no external APIs.
 
-**Bot Creation Process:**
+**Q: Does it work on Mac/Linux?**  
+A: Currently Windows-only due to system automation. Cross-platform support is planned.
 
-1. Initiate conversation with @BotFather on Telegram
-2. Execute command: `/newbot`
-3. Provide bot name: `My Zyron Assistant`
-4. Provide bot username: `myzyron_bot` (must end with `_bot`)
+**Q: How much RAM does it use?**  
+A: 2-4 GB idle, 6-8 GB during active AI processing.
 
-**Token Configuration:**
+**Q: Can I use different AI models?**  
+A: Yes! Any Ollama-compatible model works. Just update `MODEL_NAME` in `.env`
 
-1. BotFather will provide an authentication token (format: `123456789:ABCdefGHIjklMNOpqrsTUVwxyz`)
-2. Open `.env` file in project root
-3. Update `TELEGRAM_TOKEN` variable with your token
-4. Save file and restart the assistant
+**Q: Does auto-start slow down my PC?**  
+A: Nope. It launches after Windows loads with minimal impact.
 
-### Voice Control Configuration
+**Q: Do I need Telegram?**  
+A: For remote control, yes. Voice-only mode is coming in future releases.
 
-Configure voice activation settings:
+---
 
-```python
-# In config.py or .env:
-ENABLE_VOICE=True
-WAKE_WORD="hey zyron"  # Customize activation phrase
-```
+## 🤝 Contributing
 
-### Auto-Start Configuration
+We love contributions! Here's how:
 
-The installer automatically configures Windows startup integration. To manage:
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/AmazingFeature`
+3. **Commit** your changes: `git commit -m 'Add AmazingFeature'`
+4. **Push** to the branch: `git push origin feature/AmazingFeature`
+5. **Open** a Pull Request
 
-**Enable Auto-Start:**
+### Development Setup
 ```bash
-setup.bat  # Re-execute installer
-```
-
-**Disable Auto-Start:**
-```bash
-# Remove startup shortcut from:
-# %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ZyronAgent.lnk
-```
-
----
-
-## Usage
-
-### Launch Methods
-
-After installation, three launch options are available:
-
-```bash
-# Method 1: Automatic startup (post-reboot)
-# Launches automatically in stealth mode after system boot
-
-# Method 2: Manual stealth launch
-run_silent.vbs
-
-# Method 3: Console mode (debugging)
-venv\Scripts\activate
-start_pikachu.bat
-```
-
-### Command Reference
-
-**System Control Operations**
-```plaintext
-/open [app]      → Launch specified application
-/shutdown        → Initiate system shutdown
-/sleep           → Enter sleep mode
-/restart         → System reboot
-/lock            → Lock workstation
-```
-
-**Information Retrieval**
-```plaintext
-/status          → System health metrics (CPU, RAM, Battery)
-/battery         → Battery status and charge level
-/screenshot      → Screen capture
-/webcam          → Webcam image capture
-/activities      → Running applications and browser tabs
-/location        → IP-based geolocation data
-```
-
-**File Management**
-```plaintext
-/files           → Directory listing (current location)
-/download [path] → Transfer file to Telegram
-/upload          → Receive file from Telegram
-```
-
-**Audio Recording**
-```plaintext
-/record          → 10-second dual-source audio capture
-                   (system audio + microphone input)
-```
-
-**AI Assistant Interface**
-```plaintext
-/ask [question]  → Natural language query processing
-/help            → Command reference display
-/about           → System information summary
-```
-
-### Voice Command Interface
-
-Activate using wake word, then issue command:
-
-```plaintext
-Hey Pikachu, open Chrome
-Hey Pikachu, what's my battery level?
-Hey Pikachu, take a screenshot
-Hey Pikachu, show me current activities
-Hey Pikachu, record audio
-```
-
----
-
-## Advanced Configuration
-
-### Custom Command Development
-
-Extend functionality by editing `commands.py`:
-
-```python
-@bot.command("custom")
-async def custom_command(ctx):
-    # Implementation logic
-    await ctx.send("Custom command executed successfully")
-```
-
-### AI Model Selection
-
-Modify AI model in `.env` configuration:
-
-```env
-# Lightweight model (3B parameters)
-MODEL_NAME=qwen2.5-coder:3b
-
-# Enhanced model (14B parameters)
-MODEL_NAME=qwen2.5-coder:14b
-```
-
-### Logging Configuration
-
-Adjust logging verbosity in `.env`:
-
-```env
-LOG_LEVEL=DEBUG    # Comprehensive debugging output
-LOG_LEVEL=INFO     # Standard operational logging (default)
-LOG_LEVEL=WARNING  # Warning and error events only
-LOG_LEVEL=ERROR    # Critical errors only
-```
-
----
-
-## Troubleshooting
-
-### Common Issues & Resolutions
-
-<details>
-<summary><strong>Python Runtime Not Found</strong></summary>
-
-**Resolution:**
-1. Reinstall Python from [python.org](https://python.org)
-2. Ensure "Add Python to PATH" is checked during installation
-3. Restart terminal/command prompt
-4. Verify installation: `python --version`
-
-</details>
-
-<details>
-<summary><strong>Ollama Not Detected</strong></summary>
-
-**Resolution:**
-1. Install Ollama from [ollama.com](https://ollama.com)
-2. Verify installation: `ollama --version`
-3. Download required model: `ollama pull qwen2.5-coder:7b`
-4. Restart the assistant
-
-</details>
-
-<details>
-<summary><strong>Telegram Bot Unresponsive</strong></summary>
-
-**Resolution:**
-1. Verify correct token in `.env` file
-2. Confirm process is running (check Task Manager for `python.exe`)
-3. Test bot connectivity via Telegram message
-4. Review logs: `logs/assistant.log`
-
-</details>
-
-<details>
-<summary><strong>Voice Commands Not Processing</strong></summary>
-
-**Resolution:**
-1. Verify microphone permissions in Windows Settings
-2. Confirm `ENABLE_VOICE=True` in `.env`
-3. Test wake word detection in console mode
-4. Ensure microphone is set as default input device
-
-</details>
-
-<details>
-<summary><strong>Activity Monitor Showing N/A URLs</strong></summary>
-
-**Resolution:**
-1. Verify browser extension installation (see Setup section)
-2. Confirm browser compatibility (Chrome, Brave, Edge)
-3. Reload extension in browser's extension management interface
-4. Check extension permissions are granted
-
-</details>
-
----
-
-## Project Structure
-
-```plaintext
-pikachu-assistant/
-├── .git/                      # Git version control
-├── .gitignore                 # Version control exclusions
-├── browser_extension/         # Browser activity monitoring extension
-│   ├── manifest.json         # Extension configuration
-│   ├── background.js         # Background service worker
-│   ├── popup.html           # Extension UI
-│   └── popup.js             # Extension logic
-├── docs/                      # Documentation files
-│   ├── ACTIVITIES_FEATURE_GUIDE.md
-│   ├── ARCHITECTURE.md
-│   ├── CONFIGURATION.md
-│   ├── CONTRIBUTING.md
-│   ├── EXTENSION_INSTALL_GUIDE.md
-│   ├── INSTALLATION.md
-│   ├── LOCATION_ACCURACY_GUIDE.md
-│   └── USER_MANUAL.md
-├── venv/                      # Python virtual environment
-├── __pycache__/              # Python cache files
-├── .env                       # Environment configuration (user-created)
-├── README.md                  # Project documentation (this file)
-├── activity_monitor.py        # Application and browser tracking
-├── brain.py                   # AI inference engine (Ollama integration)
-├── clipboard_history.json     # Clipboard history database (NEW v1.3)
-├── clipboard_monitor.py       # Clipboard history tracking (NEW v1.3)
-├── file_activity_log.json     # File access history database (NEW v1.3)
-├── file_finder.py             # Intelligent file search (NEW v1.3)
-├── file_tracker.py            # File activity monitoring (NEW v1.3)
-├── listener.py                # Voice wake word detection system
-├── long_term_memory.json      # User preferences and learning data
-├── main.py                    # Application entry point
-├── memory.py                  # Conversation context management
-├── muscles.py                 # System automation controller
-├── requirements.txt           # Python dependency specifications
-├── run_silent.vbs             # Background process launcher (VBScript)
-├── setup.bat                  # Automated installation script (Windows Batch)
-├── start_pikachu.bat          # Quick launch utility (Windows Batch)
-├── tele_agent.py              # Telegram bot handler
-└── test_mic.py                # Microphone diagnostic tool
-```
-
-### Component Descriptions
-
-| Component | Responsibility |
-|-----------|----------------|
-| `brain.py` | AI inference via Ollama (qwen2.5-coder:7b model) |
-| `listener.py` | Voice activation and wake word processing |
-| `tele_agent.py` | Telegram API integration and command routing |
-| `muscles.py` | System control operations (applications, files, media) |
-| `memory.py` | Conversation history and context persistence |
-| `activity_monitor.py` | Application and browser session tracking |
-| `file_tracker.py` | **NEW:** Automatic file activity monitoring and logging |
-| `file_finder.py` | **NEW:** Natural language file search engine |
-| `clipboard_monitor.py` | **NEW:** Clipboard history tracker and manager |
-| `browser_extension/` | Browser tab monitoring extension source |
-| `docs/` | Comprehensive documentation and user guides |
-| `setup.bat` | Automated installer with dependency management |
-| `run_silent.vbs` | Background launcher for stealth operation |
-| `start_pikachu.bat` | Quick launcher for the assistant |
-| `test_mic.py` | Microphone functionality verification |
-
----
-
-## Release Notes
-
-### Version 1.3 - Next Release (Coming Soon)
-
-**Intelligent File Tracking & Discovery**
-- Automatic file activity monitoring across your entire system
-- 30-day historical file access log with detailed metadata
-- Context-aware file finder using natural language queries
-- Smart file type preference learning based on usage patterns
-
-**File Activity Monitor**
-- Real-time tracking of all file opens/access across applications
-- Logs file path, timestamp, application used, and duration
-- Supports 40+ file types including documents, images, videos, code files, and archives
-- Background tracking with minimal system impact
-- Automatic cleanup of logs older than 30 days
-
-**Natural Language File Finder**
-- Find files using conversational queries like:
-  - "Find that PDF I opened yesterday afternoon"
-  - "Get me that Excel file from this morning"
-  - "Send that document I was working on last week"
-  - "That image I saw 2 hours ago"
-- Time-aware search (yesterday, this morning, 2 hours ago, last week)
-- File type detection (PDF, Excel, Word, images, videos, etc.)
-- Keyword-based filtering for precise results
-- Machine learning preference tracking for better suggestions
-
-**Clipboard History Tracking**
-- Monitors and stores last 100 copied texts automatically
-- Timestamps for each clipboard entry
-- Quick access to previously copied content
-- Command: `/copied_texts` or voice: "Hey Pikachu, show clipboard history"
-
-**Command Examples**
-```plaintext
-Find that file I opened yesterday     → Search last 24 hours
-Get me that PDF from this morning     → Filter by file type + time
-Send that Excel I worked on           → Context-aware file retrieval
-Show clipboard history                → View recent copied texts
-```
-
----
-
-### Version 1.2 - Current Release
-
-**Activity Monitoring System**
-- Real-time tracking of active browser tabs with full URL visibility
-- Desktop application detection and monitoring
-- System resource utilization tracking
-- Command: `/activities` or voice: "Hey Pikachu, show activities"
-
-**Audio Recording Capability**
-- Dual-source audio capture (system + microphone)
-- 10-second recording duration with automatic processing
-- Telegram delivery integration
-
-**Geolocation Services**
-- IP-based location tracking implementation
-- City, region, and country identification
-- Command: `/location` or voice: "Hey Pikachu, where am I?"
-- Note: Accuracy subject to IP geolocation database precision
-
-**Auto-Start Integration**
-- Windows startup configuration during installation
-- Default stealth mode operation
-- Minimal boot time impact
-
-**Storage Analysis**
-- Comprehensive drive scanning for all partitions (C:, D:, etc.)
-- Visual usage status indicators (🟢/🟡/🔴)
-- Detailed breakdown of used vs. free space (GB) and percentage
-- Command: /storage or voice: "Hey Pikachu, check storage"
-
-**Recycle Bin Management**
-- Instant permanent deletion of all Recycle Bin contents across all drives
-- Rapid execution time (typically clears in seconds)
-- Command: /clear_bin or voice: "Hey Pikachu, clear the bin"
-
----
-
-## Contributing
-
-Contributions are welcome. Follow these guidelines:
-
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/NewCapability`
-3. Commit changes: `git commit -m 'Add NewCapability'`
-4. Push to branch: `git push origin feature/NewCapability`
-5. Submit Pull Request
-
-### Development Environment Setup
-
-```bash
-# Clone forked repository
-git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
-cd pikachu-assistant
-
-# Create development branch
+git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
+cd zyron-assistant
 git checkout -b dev
-
-# Install development dependencies
 pip install -r requirements-dev.txt
-
-# Execute test suite
 pytest tests/
 ```
 
 ---
 
-## Frequently Asked Questions
+## 📜 License
 
-**Q: Is user data transmitted to external servers?**  
-A: No. All processing occurs locally on your machine. Ollama handles AI inference entirely offline.
+MIT License - Free to use, modify, and distribute.
 
-**Q: Is macOS or Linux support available?**  
-A: Currently Windows-only due to system automation dependencies. Cross-platform support is planned for future releases.
-
-**Q: What are the memory requirements during operation?**  
-A: Approximately 2-4 GB while idle, 6-8 GB during active AI processing.
-
-**Q: Can alternative AI models be used?**  
-A: Yes. Any Ollama-compatible model can be configured via the `MODEL_NAME` variable in `.env`.
-
-**Q: Is Telegram integration mandatory?**  
-A: Telegram is required for remote control functionality. Voice-only operation mode is planned for future releases.
-
-**Q: How can I contribute to the project?**  
-A: See the Contributing section for detailed guidelines.
-
-**Q: Does auto-start impact system boot performance?**  
-A: No. The assistant launches as a background process after Windows initialization, using minimal system resources.
-
-**Q: How do I disable the activity monitoring feature?**  
-A: Uninstall the browser extension and remove the `activity_monitor.py` file from the project directory.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for complete terms.
-
-```plaintext
-MIT License - Free to use, modify, and distribute
-Copyright © 2025 Pikachu Desktop Assistant
+```
+Copyright © 2025 ZYRON Desktop Assistant
 ```
 
----
-
-## Acknowledgments
-
-This project builds upon the following open-source technologies:
-
-- [Ollama](https://ollama.com/) - Local AI infrastructure and model serving
-- [Qwen Team](https://qwenlm.github.io/) - Qwen 2.5 Coder language model
-- [python-telegram-bot](https://python-telegram-bot.org/) - Telegram Bot API wrapper
-- Community contributors and testers
+See [LICENSE](LICENSE) for full terms.
 
 ---
 
-## Support & Documentation
+## 🙏 Acknowledgments
 
-**Documentation Resources**
-- Comprehensive Wiki: [Documentation](https://github.com/Surajkumar5050/pikachu-assistant/tree/main/docs)
-- Bug Reports: [Issue Tracker](https://github.com/Surajkumar5050/pikachu-assistant/issues)
-- Community Discussion: [GitHub Discussions](https://github.com/Surajkumar5050/pikachu-assistant/issues)
+Built with amazing open-source tools:
+
+- [Ollama](https://ollama.com/) - Local AI infrastructure
+- [Qwen Team](https://qwenlm.github.io/) - Qwen 2.5 Coder model
+- [python-telegram-bot](https://python-telegram-bot.org/) - Telegram API wrapper
+- All our contributors and testers ❤️
+
+---
+
+## 📞 Support & Community
+
+- 📖 **Documentation**: [Full Wiki](https://github.com/Surajkumar5050/zyron-assistant/tree/main/docs)
+- 🐛 **Bug Reports**: [Issue Tracker](https://github.com/Surajkumar5050/zyron-assistant/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Surajkumar5050/zyron-assistant/discussions)
 
 ---
 
 <div align="center">
 
-**If this project adds value to your workflow, please consider starring the repository.**
+### ⭐ Star This Project!
 
-*Developed with precision and attention to detail*
+If ZYRON makes your life easier, give us a star! It helps others discover this project.
 
-[Return to Top](#zyron-desktop-assistant)
+**[⬆ Back to Top](#-zyron-desktop-assistant)**
+
+---
+
+<p><i>Crafted with 💙 for privacy-conscious power users</i></p>
 
 </div>

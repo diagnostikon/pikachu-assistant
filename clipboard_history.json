@@ -1,5 +1,115 @@
 [
   {
+    "text": "git add .",
+    "timestamp": "2026-02-04 12:54:40",
+    "length": 9
+  },
+  {
+    "text": "8465567232:AAHH0VeOoXT46_klnFC8Hx7D5e_jXNyG3LI",
+    "timestamp": "2026-02-04 12:53:15",
+    "length": 46
+  },
+  {
+    "text": "git status",
+    "timestamp": "2026-02-04 12:52:35",
+    "length": 10
+  },
+  {
+    "text": "<div align=\"center\">\r\n\r\n<img src=\"header.png\" alt=\"ZYRON Assistant Header\" width=\"100%\">\r\n\r\n<h1>🤖 ZYRON Desktop Assistant</h1>\r\n\r\n<p><strong>Your Intelligent Desktop Companion - 100% Local, 100% Private</strong></p>\r\n\r\n[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)\r\n[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)\r\n[![AI Engine](https://img.shields.io/badge/AI-Ollama-000000.svg?style=flat-square&logo=ai&logoColor=white)](https://ollama.com)\r\n[![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-00C853.svg?style=flat-square&logo=shield&logoColor=white)](#)\r\n[![License](https://img.shields.io/badge/License-MIT-FFC107.svg?style=flat-square)](LICENSE)\r\n\r\n</div>\r\n\r\n<div align=\"center\">\r\n  <h3>⚡ Powerful • 🔒 Private • 🎯 Precise</h3>\r\n  <p>Control your Windows PC with voice commands or Telegram - all powered by local AI with zero cloud dependencies</p>\r\n</div>\r\n\r\n---\r\n\r\n## ✨ What Makes ZYRON Special?\r\n\r\nZYRON isn't just another assistant - it's your personal AI that lives entirely on your machine. No subscriptions, no cloud uploads, no privacy concerns. Just pure, powerful automation at your fingertips.\r\n\r\n<div align=\"center\">\r\n\r\n### 🎯 Core Features\r\n\r\n</div>\r\n\r\n<table>\r\n  <tr>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>🎤 Voice Control</h4>\r\n      <p>Just say \"Hey Pikachu\" and command your PC naturally</p>\r\n    </td>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>📱 Remote Access</h4>\r\n      <p>Control your computer from anywhere via Telegram</p>\r\n    </td>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>🧠 Smart AI</h4>\r\n      <p>Powered by Qwen 2.5 Coder - understands context and intent</p>\r\n    </td>\r\n  </tr>\r\n  <tr>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>🔒 100% Private</h4>\r\n      <p>Everything runs locally - no data leaves your PC</p>\r\n    </td>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>💰 Zero Cost</h4>\r\n      <p>No API fees, no subscriptions, completely free</p>\r\n    </td>\r\n    <td width=\"33%\" align=\"center\">\r\n      <h4>🚀 Production Ready</h4>\r\n      <p>Auto-start, stealth mode, enterprise-grade</p>\r\n    </td>\r\n  </tr>\r\n</table>\r\n\r\n---\r\n\r\n## 📸 See It In Action\r\n\r\n<div align=\"center\">\r\n\r\n### Real Conversations with ZYRON\r\n\r\n<table>\r\n  <tr>\r\n    <td width=\"50%\">\r\n      <img src=\"collage1.png\" alt=\"File Search & Battery Monitoring\" width=\"100%\">\r\n      <p align=\"center\"><i>Smart file search and battery monitoring with code copying</i></p>\r\n    </td>\r\n    <td width=\"50%\">\r\n      <img src=\"collage2.png\" alt=\"System Activities & Storage\" width=\"100%\">\r\n      <p align=\"center\"><i>Live browser tracking, app monitoring, and storage analysis</i></p>\r\n    </td>\r\n  </tr>\r\n  <tr>\r\n    <td width=\"50%\">\r\n      <img src=\"collage3.png\" alt=\"Location & Camera Feed\" width=\"100%\">\r\n      <p align=\"center\"><i>Geolocation tracking and live camera feed access</i></p>\r\n    </td>\r\n    <td width=\"50%\">\r\n      <img src=\"collage4.png\" alt=\"Audio Recording & File System\" width=\"100%\">\r\n      <p align=\"center\"><i>Audio recording and intelligent file system navigation</i></p>\r\n    </td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"2\" align=\"center\">\r\n      <img src=\"collage5.png\" alt=\"Screenshot & System Health\" width=\"50%\">\r\n      <p align=\"center\"><i>Screenshots and comprehensive system health monitoring</i></p>\r\n    </td>\r\n  </tr>\r\n</table>\r\n\r\n</div>\r\n\r\n---\r\n\r\n## 🎯 What Can ZYRON Do?\r\n\r\n### 💻 System Control\r\n- **Launch & Manage Apps** - Open Chrome, Spotify, VS Code, or any application\r\n- **Power Management** - Sleep, shutdown, restart, or lock your PC\r\n- **File Operations** - Browse, search, and manage files naturally\r\n- **Window Control** - Switch between apps, minimize, maximize\r\n\r\n### 📊 Monitoring & Intelligence\r\n- **Live Activity Tracking** - See what apps you're running and which browser tabs are open\r\n- **System Health** - Real-time CPU, RAM, disk, and battery monitoring\r\n- **Storage Analysis** - Check available space across all drives\r\n- **Clipboard History** - Access your last 100 copied texts\r\n\r\n### 📸 Media Capture\r\n- **Screenshots** - Capture your screen on command\r\n- **Camera Feed** - Access your webcam remotely\r\n- **Audio Recording** - Record 10-second clips from system + microphone\r\n- **Instant Sharing** - All media delivered via Telegram\r\n\r\n### 🔍 Smart Search\r\n- **Intelligent File Finder** - \"Find that PDF I opened yesterday\" - ZYRON understands\r\n- **Recent Files** - Access files by time, type, or keyword\r\n- **Activity Log** - 30-day history of all file access\r\n- **Context-Aware** - Learns your preferences over time\r\n\r\n### 🌍 Location & Network\r\n- **IP Geolocation** - Know where your laptop is\r\n- **Network Info** - Check your connection status\r\n- **Location Tracking** - Useful for lost/stolen device scenarios\r\n\r\n---\r\n\r\n## 🚀 Quick Start\r\n\r\n### Prerequisites\r\n\r\n| Requirement | Version | Download |\r\n|-------------|---------|----------|\r\n| **Windows** | 10/11 (64-bit) | Pre-installed |\r\n| **Python** | 3.10+ | [python.org](https://www.python.org/downloads/) |\r\n| **Ollama** | Latest | [ollama.com](https://ollama.com/) |\r\n| **Telegram Bot** | Token | [@BotFather](https://t.me/BotFather) |\r\n\r\n### 🎬 Installation (5 Minutes)\r\n\r\n```bash\r\n# 1. Clone the repo\r\ngit clone https://github.com/YOUR_USERNAME/zyron-assistant.git\r\ncd zyron-assistant\r\n\r\n# 2. Run the magic installer\r\nsetup.bat\r\n\r\n# That's it! The installer handles:\r\n# ✓ Python environment setup\r\n# ✓ All dependencies\r\n# ✓ AI model download (qwen2.5-coder:7b)\r\n# ✓ Windows startup integration\r\n# ✓ Stealth mode configuration\r\n```\r\n\r\n### ⚙️ Configuration\r\n\r\nCreate a `.env` file:\r\n\r\n```env\r\nTELEGRAM_TOKEN=your_bot_token_here\r\nMODEL_NAME=qwen2.5-coder:7b\r\nLOG_LEVEL=INFO\r\n```\r\n\r\n### 🎯 Launch\r\n\r\n```bash\r\n# Visible mode (for testing)\r\npython main.py\r\n\r\n# Stealth mode (runs in background)\r\nrun_silent.vbs\r\n```\r\n\r\n---\r\n\r\n## 🎤 Command Examples\r\n\r\n### Voice Commands\r\n```\r\n\"Hey Pikachu, what's my battery level?\"\r\n\"Hey Pikachu, open Spotify\"\r\n\"Hey Pikachu, take a screenshot\"\r\n\"Hey Pikachu, show me what I'm doing\"\r\n\"Hey Pikachu, find that Excel file from yesterday\"\r\n\"Hey Pikachu, where am I?\"\r\n\"Hey Pikachu, check storage\"\r\n```\r\n\r\n### Telegram Commands\r\n```\r\n/activities - See running apps and browser tabs\r\n/screenshot - Capture your screen\r\n/battery - Check battery status\r\n/storage - View disk space across all drives\r\n/location - Get current location\r\n/recordaudio - Record 10 seconds of audio\r\n/camera_on - Start camera feed\r\n/sleep - Put PC to sleep\r\n/copied_texts - View clipboard history\r\n```\r\n\r\n### Natural Language (Both Voice & Text)\r\n```\r\n\"Open Chrome and go to YouTube\"\r\n\"What's my battery percentage?\"\r\n\"Find that PDF I was working on this morning\"\r\n\"Show me my system resources\"\r\n\"List files in my downloads folder\"\r\n\"Clear the recycle bin\"\r\n\"Send me that document I opened yesterday\"\r\n```\r\n\r\n---\r\n\r\n## 🏗️ Project Architecture\r\n\r\n```\r\nzyron-assistant/\r\n│\r\n├── 🧠 brain.py              # AI inference engine (Ollama)\r\n├── 👂 listener.py           # Voice wake word detection\r\n├── 📱 tele_agent.py         # Telegram bot handler\r\n├── 💪 muscles.py            # System automation controller\r\n├── 🧠 memory.py             # Conversation context\r\n├── 📊 activity_monitor.py   # Browser & app tracking\r\n├── 🔍 file_finder.py        # Intelligent file search\r\n├── 📂 file_tracker.py       # File activity logging\r\n├── 📋 clipboard_monitor.py  # Clipboard history\r\n├── 🌐 browser_extension/    # Chrome extension for tab monitoring\r\n├── ⚙️ setup.bat             # Automated installer\r\n├── 🥷 run_silent.vbs        # Stealth launcher\r\n└── 📚 docs/                 # Documentation\r\n```\r\n\r\n---\r\n\r\n## 🆕 Latest Features (v1.3)\r\n\r\n### 🎯 Intelligent File Tracking\r\n- **Automatic Monitoring** - Tracks every file you open across all applications\r\n- **30-Day History** - Complete log with timestamps, apps, and duration\r\n- **40+ File Types** - Documents, images, videos, code, archives, and more\r\n\r\n### 🔍 Natural Language File Search\r\nJust describe what you're looking for:\r\n- \"Find that PDF I opened yesterday afternoon\"\r\n- \"Get me that Excel file from this morning\"\r\n- \"Send that document I was working on last week\"\r\n- \"That image I saw 2 hours ago\"\r\n\r\n### 📋 Clipboard History\r\n- **Last 100 Texts** - Never lose a copied snippet again\r\n- **Timestamped** - Know when you copied it\r\n- **Quick Access** - Retrieve via voice or Telegram\r\n\r\n---\r\n\r\n## 🔒 Privacy & Security\r\n\r\n**Why ZYRON is Different:**\r\n\r\n✅ **Zero Cloud Dependencies** - Everything runs on your machine  \r\n✅ **No External APIs** - Your data never leaves your PC  \r\n✅ **No Telemetry** - We don't collect anything  \r\n✅ **Open Source** - Audit the code yourself  \r\n✅ **Local AI** - Ollama processes everything offline  \r\n\r\n**Your data is YOURS.**\r\n\r\n---\r\n\r\n## 🛠️ Advanced Setup\r\n\r\n### Browser Activity Monitoring\r\n\r\nFor complete browser tab tracking with URLs:\r\n\r\n1. Navigate to your browser's extension page:\r\n   - Chrome: `chrome://extensions`\r\n   - Brave: `brave://extensions`\r\n   - Edge: `edge://extensions`\r\n\r\n2. Enable \"Developer mode\" (toggle in top-right)\r\n\r\n3. Click \"Load unpacked\" and select: `browser_extension/manifest.json`\r\n\r\n4. Pin the extension to your toolbar\r\n\r\nNow ZYRON can see your active tabs and URLs in real-time!\r\n\r\n---\r\n\r\n## ❓ FAQ\r\n\r\n**Q: Is my data safe?**  \r\nA: Absolutely. Everything runs locally on your PC. No cloud services, no external APIs.\r\n\r\n**Q: Does it work on Mac/Linux?**  \r\nA: Currently Windows-only due to system automation. Cross-platform support is planned.\r\n\r\n**Q: How much RAM does it use?**  \r\nA: 2-4 GB idle, 6-8 GB during active AI processing.\r\n\r\n**Q: Can I use different AI models?**  \r\nA: Yes! Any Ollama-compatible model works. Just update `MODEL_NAME` in `.env`\r\n\r\n**Q: Does auto-start slow down my PC?**  \r\nA: Nope. It launches after Windows loads with minimal impact.\r\n\r\n**Q: Do I need Telegram?**  \r\nA: For remote control, yes. Voice-only mode is coming in future releases.\r\n\r\n---\r\n\r\n## 🤝 Contributing\r\n\r\nWe love contributions! Here's how:\r\n\r\n1. **Fork** the repository\r\n2. **Create** a feature branch: `git checkout -b feature/AmazingFeature`\r\n3. **Commit** your changes: `git commit -m 'Add AmazingFeature'`\r\n4. **Push** to the branch: `git push origin feature/AmazingFeature`\r\n5. **Open** a Pull Request\r\n\r\n### Development Setup\r\n```bash\r\ngit clone https://github.com/YOUR_USERNAME/zyron-assistant.git\r\ncd zyron-assistant\r\ngit checkout -b dev\r\npip install -r requirements-dev.txt\r\npytest tests/\r\n```\r\n\r\n---\r\n\r\n## 📜 License\r\n\r\nMIT License - Free to use, modify, and distribute.\r\n\r\n```\r\nCopyright © 2025 ZYRON Desktop Assistant\r\n```\r\n\r\nSee [LICENSE](LICENSE) for full terms.\r\n\r\n---\r\n\r\n## 🙏 Acknowledgments\r\n\r\nBuilt with amazing open-source tools:\r\n\r\n- [Ollama](https://ollama.com/) - Local AI infrastructure\r\n- [Qwen Team](https://qwenlm.github.io/) - Qwen 2.5 Coder model\r\n- [python-telegram-bot](https://python-telegram-bot.org/) - Telegram API wrapper\r\n- All our contributors and testers ❤️\r\n\r\n---\r\n\r\n## 📞 Support & Community\r\n\r\n- 📖 **Documentation**: [Full Wiki](https://github.com/Surajkumar5050/zyron-assistant/tree/main/docs)\r\n- 🐛 **Bug Reports**: [Issue Tracker](https://github.com/Surajkumar5050/zyron-assistant/issues)\r\n- 💬 **Discussions**: [GitHub Discussions](https://github.com/Surajkumar5050/zyron-assistant/discussions)\r\n\r\n---\r\n\r\n<div align=\"center\">\r\n\r\n### ⭐ Star This Project!\r\n\r\nIf ZYRON makes your life easier, give us a star! It helps others discover this project.\r\n\r\n**[⬆ Back to Top](#-zyron-desktop-assistant)**\r\n\r\n---\r\n\r\n<p><i>Crafted with 💙 for privacy-conscious power users</i></p>\r\n\r\n</div>",
+    "timestamp": "2026-02-04 12:50:44",
+    "length": 11657
+  },
+  {
+    "text": "The word “ZYRON” rendered as a bold, artistic graffiti-style typography, hand-drawn spray-paint lettering with sharp and fluid strokes, modern contemporary feel, set against a dark neutral background, subtle cinematic lighting highlighting the edges of the letters. Inside and across the text, glowing ancient manuscripts, symbolic scripts, and historic calligraphic patterns are embedded within the letterforms, as if knowledge is flowing through the paint. Soft golden and emerald glows illuminate the inner layers of the typography, creating depth and contrast. Slight texture wear, ink splatter, and layered paint effects, balanced between street art and cinematic design. High detail, aesthetic, iconic title typography, text-only composition, no characters, no scenery, no motion blur, no animation.",
+    "timestamp": "2026-02-04 11:44:13",
+    "length": 805
+  },
+  {
+    "text": "The word “ZYRON” as a bold graffiti-style typographic form, modern and minimal, hand-drawn spray-paint lettering with sharp edges and smooth curves, neutral dark backdrop, subtle rim lighting on the text, contemporary animated mood, slightly reflective paint texture, restrained color palette, clean and calm presence, cinematic framing, focus entirely on typography",
+    "timestamp": "2026-02-04 11:43:42",
+    "length": 366
+  },
+  {
+    "text": "START IMAGE Modern human silhouette in thought, neutral dark background, subtle light on the face, animated contemporary mood ENDING IMAGE The silhouette overlaid with glowing ancient manuscripts and the city of Constantinople, past knowledge flowing into the present, cinematic animated historical legacy finale",
+    "timestamp": "2026-02-04 11:42:42",
+    "length": 312
+  },
+  {
+    "text": "The word “ZYRON” rendered as a cinematic hand-drawn anime title card, 1990s sci-fi anime OVA aesthetic, thick uneven ink outlines, hand-painted cel animation look, limited color palette, subtle analog glow, soft CRT phosphor bleed, gentle green monitor-style reflections across the lettering, cracked and worn texture on strokes, slight misregistration like traditional cel layers, deep shadowed edges, emotional tone, dramatic lighting, film grain, VHS-era softness, nostalgic sci-fi mood, painterly imperfections, organic brush strokes, no background illustration, focus entirely on stylized typography, aesthetic and atmospheric, high detail, anime title typography art",
+    "timestamp": "2026-02-04 11:40:15",
+    "length": 672
+  },
+  {
+    "text": "lonely space pilot inside small fighter cockpit, tired bald man, long black beard ,cracked helmet visor, green CRT monitors reflecting on face, deep shadows, emotional anime close-up, 90s sci-fi anime OVA, thick outlines, limited animation style, hand-painted cel look, analog glow, film grain\r\n\r\n",
+    "timestamp": "2026-02-04 11:38:07",
+    "length": 297
+  },
+  {
+    "text": "A clean, futuristic isometric architecture diagram of an AI desktop assistant. In the center is a glowing core processor labeled 'Brain' pulsating with electric yellow light. It is connected by sleek data cables to a floating smartphone interface labeled 'Telegram Bot'. Surrounding the core are modular satellite nodes: one labeled 'File Tracker' scanning a document, one labeled 'Muscles' connected to system gears, and one labeled 'Memory' storing data blocks. Neon cyan and yellow data streams flow continuously between all nodes, visualizing real-time connectivity. Deep charcoal background, minimalist vector style, high-tech aesthetic, 8k resolution, matte 3D finish.",
+    "timestamp": "2026-02-04 11:20:40",
+    "length": 674
+  },
+  {
+    "text": "Based on your project files, your system relies on a Central Intelligence (Brain) that receives inputs from a Remote Interface (Telegram) and coordinates with various Background Services (File Tracker, Activity Monitor) to control the System (Muscles).\n\nHere is a prompt designed to generate a clean, high-tech aesthetic image that visualizes this specific architecture.\n\nThe Prompt\n\"A clean, futuristic isometric architecture diagram of an AI desktop assistant. In the center is a glowing core processor labeled 'Brain' pulsating with electric yellow light. It is connected by sleek data cables to a floating smartphone interface labeled 'Telegram Bot'. Surrounding the core are modular satellite nodes: one labeled 'File Tracker' scanning a document, one labeled 'Muscles' connected to system gears, and one labeled 'Memory' storing data blocks. Neon cyan and yellow data streams flow continuously between all nodes, visualizing real-time connectivity. Deep charcoal background, minimalist vector style, high-tech aesthetic, 8k resolution, matte 3D finish.",
+    "timestamp": "2026-02-04 11:20:32",
+    "length": 1058
+  },
+  {
+    "text": "https://x.com/ujjwalscript/status/2018739626752737614",
+    "timestamp": "2026-02-04 09:52:02",
+    "length": 53
+  },
+  {
+    "text": "https://x.com/rockstarrrrrrr9/status/2018900820780360164",
+    "timestamp": "2026-02-04 09:44:06",
+    "length": 56
+  },
+  {
+    "text": "https://github.com/Surajkumar5050/pikachu-assistant",
+    "timestamp": "2026-02-04 09:43:05",
+    "length": 51
+  },
+  {
+    "text": "I hate losing files on my laptop. So I coded a fix. ⚡️\n\nI added a feature to my AI bot where I just text: \"Send me the PDF I was reading yesterday afternoon.\"\n\nIt checks my activity logs, finds the file, and sends it to my phone instantly. No more digging through folders. 📂➡️📱\n\n#Python #SideProject #Automation",
+    "timestamp": "2026-02-04 09:41:33",
+    "length": 311
+  },
+  {
+    "text": "\"Send me the PPT that I was working on 5 days ago, maybe in the afternoon.\"",
+    "timestamp": "2026-02-04 09:38:27",
+    "length": 75
+  },
+  {
+    "text": "I usually lose my PDFs or documents because I forget where I saved them or what specific weird name I gave them. But I always remember when I was using them.\n\nSo, I just added a new feature to my existing desktop assistant project. Now, instead of digging through folders, I can just text my bot:\n\n\"Send me the PPT that I was working on 5 days ago, maybe in the afternoon.\"\n\nAnd BOOM—it checks my activity logs, filters by file type and time, and sends the actual file to my Telegram chat in seconds. It even tells me how long I worked on it and which app I used.\n\nFinally fixed my disorganized file habits with Python. 😅",
+    "timestamp": "2026-02-04 09:34:59",
+    "length": 621
+  },
+  {
+    "text": "https://github.com/Surajkumar5050/pikachu-assistant",
+    "timestamp": "2026-02-04 09:33:41",
+    "length": 51
+  },
+  {
+    "text": "github.com/Surajkumar5050/pikachu-assistant",
+    "timestamp": "2026-02-04 09:33:41",
+    "length": 43
+  },
+  {
+    "text": "I kept losing files on my laptop, so I updated my AI assistant to find them based on when I worked on them.",
+    "timestamp": "2026-02-04 09:33:00",
+    "length": 107
+  },
+  {
+    "text": "https://youtu.be/oyCC_gIxBm8?t=502",
+    "timestamp": "2026-02-04 08:53:05",
+    "length": 34
+  },
+  {
+    "text": "💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖",
+    "timestamp": "2026-02-04 08:42:02",
+    "length": 15
+  },
+  {
     "text": "Downloads\r\n",
     "timestamp": "2026-02-04 02:37:35",
     "length": 11
