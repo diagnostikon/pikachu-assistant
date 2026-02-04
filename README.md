@@ -2,7 +2,7 @@
 
 <img src="markdown_themes/header.png" alt="ZYRON Assistant Header" width="100%">
 
-<h1>🤖 ZYRON Desktop Assistant</h1>
+<h1>ZYRON Desktop Assistant</h1>
 
 <p><strong>Your Intelligent Desktop Companion - 100% Local, 100% Private</strong></p>
 
@@ -15,48 +15,48 @@
 </div>
 
 <div align="center">
-  <h3>⚡ Powerful • 🔒 Private • 🎯 Precise</h3>
+  <h3>Powerful • Private • Precise</h3>
   <p>Control your Windows PC with voice commands or Telegram - all powered by local AI with zero cloud dependencies</p>
 </div>
 
 ---
 
-## ✨ What Makes ZYRON Special?
+## What Makes ZYRON Special?
 
 ZYRON isn't just another assistant - it's your personal AI that lives entirely on your machine. No subscriptions, no cloud uploads, no privacy concerns. Just pure, powerful automation at your fingertips.
 
 <div align="center">
 
-### 🎯 Core Features
+### Core Features
 
 </div>
 
 <table>
   <tr>
     <td width="33%" align="center">
-      <h4>🎤 Voice Control</h4>
+      <h4>Voice Control</h4>
       <p>Just say "Hey Pikachu" and command your PC naturally</p>
     </td>
     <td width="33%" align="center">
-      <h4>📱 Remote Access</h4>
+      <h4>Remote Access</h4>
       <p>Control your computer from anywhere via Telegram</p>
     </td>
     <td width="33%" align="center">
-      <h4>🧠 Smart AI</h4>
+      <h4>Smart AI</h4>
       <p>Powered by Qwen 2.5 Coder - understands context and intent</p>
     </td>
   </tr>
   <tr>
     <td width="33%" align="center">
-      <h4>🔒 100% Private</h4>
+      <h4>100% Private</h4>
       <p>Everything runs locally - no data leaves your PC</p>
     </td>
     <td width="33%" align="center">
-      <h4>💰 Zero Cost</h4>
+      <h4>Zero Cost</h4>
       <p>No API fees, no subscriptions, completely free</p>
     </td>
     <td width="33%" align="center">
-      <h4>🚀 Production Ready</h4>
+      <h4>Production Ready</h4>
       <p>Auto-start, stealth mode, enterprise-grade</p>
     </td>
   </tr>
@@ -64,7 +64,7 @@ ZYRON isn't just another assistant - it's your personal AI that lives entirely o
 
 ---
 
-## 📸 See It In Action
+## See It In Action
 
 <div align="center">
 
@@ -102,40 +102,40 @@ ZYRON isn't just another assistant - it's your personal AI that lives entirely o
 
 ---
 
-## 🎯 What Can ZYRON Do?
+## What Can ZYRON Do?
 
-### 💻 System Control
+### System Control
 - **Launch & Manage Apps** - Open Chrome, Spotify, VS Code, or any application
 - **Power Management** - Sleep, shutdown, restart, or lock your PC
 - **File Operations** - Browse, search, and manage files naturally
 - **Window Control** - Switch between apps, minimize, maximize
 
-### 📊 Monitoring & Intelligence
+### Monitoring & Intelligence
 - **Live Activity Tracking** - See what apps you're running and which browser tabs are open
 - **System Health** - Real-time CPU, RAM, disk, and battery monitoring
 - **Storage Analysis** - Check available space across all drives
 - **Clipboard History** - Access your last 100 copied texts
 
-### 📸 Media Capture
+### Media Capture
 - **Screenshots** - Capture your screen on command
 - **Camera Feed** - Access your webcam remotely
 - **Audio Recording** - Record 10-second clips from system + microphone
 - **Instant Sharing** - All media delivered via Telegram
 
-### 🔍 Smart Search
+### Smart Search
 - **Intelligent File Finder** - "Find that PDF I opened yesterday" - ZYRON understands
 - **Recent Files** - Access files by time, type, or keyword
 - **Activity Log** - 30-day history of all file access
 - **Context-Aware** - Learns your preferences over time
 
-### 🌍 Location & Network
+### Location & Network
 - **IP Geolocation** - Know where your laptop is
 - **Network Info** - Check your connection status
 - **Location Tracking** - Useful for lost/stolen device scenarios
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -146,14 +146,14 @@ ZYRON isn't just another assistant - it's your personal AI that lives entirely o
 | **Ollama** | Latest | [ollama.com](https://ollama.com/) |
 | **Telegram Bot** | Token | [@BotFather](https://t.me/BotFather) |
 
-### 🎬 Installation (5 Minutes)
+### Installation (5 Minutes)
 
 ```bash
-# 1. Clone the repo
+# 1. Clone the repository
 git clone https://github.com/YOUR_USERNAME/zyron-assistant.git
 cd zyron-assistant
 
-# 2. Run the magic installer
+# 2. Run the automated installer
 setup.bat
 
 # That's it! The installer handles:
@@ -164,7 +164,7 @@ setup.bat
 # ✓ Stealth mode configuration
 ```
 
-### ⚙️ Configuration
+### Configuration
 
 Create a `.env` file:
 
@@ -174,7 +174,7 @@ MODEL_NAME=qwen2.5-coder:7b
 LOG_LEVEL=INFO
 ```
 
-### 🎯 Launch
+### Launch
 
 ```bash
 # Visible mode (for testing)
@@ -186,7 +186,7 @@ run_silent.vbs
 
 ---
 
-## 🎤 Command Examples
+## Command Examples
 
 ### Voice Commands
 ```
@@ -225,64 +225,98 @@ run_silent.vbs
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 zyron-assistant/
 │
-├── 🧠 brain.py              # AI inference engine (Ollama)
-├── 👂 listener.py           # Voice wake word detection
-├── 📱 tele_agent.py         # Telegram bot handler
-├── 💪 muscles.py            # System automation controller
-├── 🧠 memory.py             # Conversation context
-├── 📊 activity_monitor.py   # Browser & app tracking
-├── 🔍 file_finder.py        # Intelligent file search
-├── 📂 file_tracker.py       # File activity logging
-├── 📋 clipboard_monitor.py  # Clipboard history
-├── 🌐 browser_extension/    # Chrome extension for tab monitoring
-├── ⚙️ setup.bat             # Automated installer
-├── 🥷 run_silent.vbs        # Stealth launcher
-└── 📚 docs/                 # Documentation
+├── main.py                    # Application entry point
+├── brain.py                   # AI inference engine (Ollama integration)
+├── listener.py                # Voice wake word detection system
+├── tele_agent.py              # Telegram bot handler
+├── muscles.py                 # System automation controller
+├── memory.py                  # Conversation context manager
+├── activity_monitor.py        # Browser & application tracking
+├── file_finder.py             # Intelligent file search engine
+├── file_tracker.py            # File activity logging system
+├── clipboard_monitor.py       # Clipboard history manager
+│
+├── browser_extension/         # Chrome extension for tab monitoring
+│   ├── manifest.json
+│   ├── background.js
+│   ├── popup.html
+│   ├── popup.js
+│   └── icons/
+│       ├── icon16.png
+│       ├── icon48.png
+│       └── icon128.png
+│
+├── docs/                      # Documentation
+│   ├── ACTIVITIES_FEATURE_GUIDE.md
+│   ├── ARCHITECTURE.md
+│   ├── CONFIGURATION.md
+│   ├── CONTRIBUTING.md
+│   ├── EXTENSION_INSTALL_GUIDE.md
+│   ├── INSTALLATION.md
+│   ├── LOCATION_ACCURACY_GUIDE.md
+│   └── USER_MANUAL.md
+│
+├── markdown_themes/           # README assets
+│   ├── header.png
+│   ├── collage1.png
+│   ├── collage2.png
+│   ├── collage3.png
+│   ├── collage4.png
+│   └── collage5.png
+│
+├── setup.bat                  # Automated installer
+├── run_silent.vbs             # Stealth mode launcher
+├── start_pikachu.bat          # Standard launcher
+├── requirements.txt           # Python dependencies
+├── .env                       # Environment configuration (create this)
+├── .gitignore                 # Git ignore rules
+├── README.md                  # This file
+└── LICENSE                    # MIT License
 ```
 
 ---
 
-## 🆕 Latest Features (v1.3)
+## Latest Features (v1.3)
 
-### 🎯 Intelligent File Tracking
+### Intelligent File Tracking
 - **Automatic Monitoring** - Tracks every file you open across all applications
 - **30-Day History** - Complete log with timestamps, apps, and duration
 - **40+ File Types** - Documents, images, videos, code, archives, and more
 
-### 🔍 Natural Language File Search
+### Natural Language File Search
 Just describe what you're looking for:
 - "Find that PDF I opened yesterday afternoon"
 - "Get me that Excel file from this morning"
 - "Send that document I was working on last week"
 - "That image I saw 2 hours ago"
 
-### 📋 Clipboard History
+### Clipboard History
 - **Last 100 Texts** - Never lose a copied snippet again
 - **Timestamped** - Know when you copied it
 - **Quick Access** - Retrieve via voice or Telegram
 
 ---
 
-## 🔒 Privacy & Security
+## Privacy & Security
 
 **Why ZYRON is Different:**
 
-✅ **Zero Cloud Dependencies** - Everything runs on your machine  
-✅ **No External APIs** - Your data never leaves your PC  
-✅ **No Telemetry** - We don't collect anything  
-✅ **Open Source** - Audit the code yourself  
-✅ **Local AI** - Ollama processes everything offline  
+**Zero Cloud Dependencies** - Everything runs on your machine  
+**No External APIs** - Your data never leaves your PC  
+**No Telemetry** - We don't collect anything  
+**Open Source** - Audit the code yourself  
+**Local AI** - Ollama processes everything offline  
 
 **Your data is YOURS.**
 
 ---
 
-## 🛠️ Advanced Setup
+## Advanced Setup
 
 ### Browser Activity Monitoring
 
@@ -303,7 +337,7 @@ Now ZYRON can see your active tabs and URLs in real-time!
 
 ---
 
-## ❓ FAQ
+## Frequently Asked Questions
 
 **Q: Is my data safe?**  
 A: Absolutely. Everything runs locally on your PC. No cloud services, no external APIs.
@@ -318,14 +352,14 @@ A: 2-4 GB idle, 6-8 GB during active AI processing.
 A: Yes! Any Ollama-compatible model works. Just update `MODEL_NAME` in `.env`
 
 **Q: Does auto-start slow down my PC?**  
-A: Nope. It launches after Windows loads with minimal impact.
+A: No. It launches after Windows loads with minimal impact.
 
 **Q: Do I need Telegram?**  
 A: For remote control, yes. Voice-only mode is coming in future releases.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We love contributions! Here's how:
 
@@ -346,7 +380,7 @@ pytest tests/
 
 ---
 
-## 📜 License
+## License
 
 MIT License - Free to use, modify, and distribute.
 
@@ -358,35 +392,35 @@ See [LICENSE](LICENSE) for full terms.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built with amazing open-source tools:
 
 - [Ollama](https://ollama.com/) - Local AI infrastructure
 - [Qwen Team](https://qwenlm.github.io/) - Qwen 2.5 Coder model
 - [python-telegram-bot](https://python-telegram-bot.org/) - Telegram API wrapper
-- All our contributors and testers ❤️
+- All our contributors and testers
 
 ---
 
-## 📞 Support & Community
+## Support & Community
 
-- 📖 **Documentation**: [Full Wiki](https://github.com/Surajkumar5050/zyron-assistant/tree/main/docs)
-- 🐛 **Bug Reports**: [Issue Tracker](https://github.com/Surajkumar5050/zyron-assistant/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/Surajkumar5050/zyron-assistant/discussions)
+- **Documentation**: [Full Wiki](https://github.com/Surajkumar5050/zyron-assistant/tree/main/docs)
+- **Bug Reports**: [Issue Tracker](https://github.com/Surajkumar5050/zyron-assistant/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Surajkumar5050/zyron-assistant/discussions)
 
 ---
 
 <div align="center">
 
-### ⭐ Star This Project!
+### Star This Project
 
 If ZYRON makes your life easier, give us a star! It helps others discover this project.
 
-**[⬆ Back to Top](#-zyron-desktop-assistant)**
+**[Back to Top](#zyron-desktop-assistant)**
 
 ---
 
-<p><i>Crafted with 💙 for privacy-conscious power users</i></p>
+<p><i>Crafted with care for privacy-conscious power users</i></p>
 
 </div>
